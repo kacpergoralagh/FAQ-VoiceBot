@@ -1,0 +1,44 @@
+/* app/styles.qss */
+
+/* Styl dla przycisków w pasku bocznym */
+QWidget#Sidebar QPushButton {
+    text-align: left;      /* Tekst do lewej */
+    padding-left: 20px;    /* Odstęp od lewej krawędzi */
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;          /* Usuwamy ramkę */
+    background-color: transparent; /* Przezroczyste tło (chyba że najedziesz myszką) */
+    color: #B3B3B3;        /* Szary tekst (nieaktywny) */
+}
+
+QWidget#Sidebar QPushButton:hover {
+    background-color: #282828; /* Lekko jaśniejsze tło po najechaniu */
+    color: white;              /* Biały tekst po najechaniu */
+}
+
+/* app/styles.qss */
+
+/* Domyślny wygląd przycisku nagrywania */
+QPushButton#RecordButton {
+    background-color: #E91E63; /* Różowy startowy */
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+QPushButton#RecordButton:hover {
+    background-color: #D81B60;
+}
+
+/* Wygląd GDY nagrywa (Dynamic Property) */
+QPushButton#RecordButton[recording_state="true"] {
+    background-color: #B00020; /* Ciemny czerowny (Stop) */
+    border: 2px solid #FF5252; /* Opcjonalnie: jasna ramka */
+}
+
+/* Wygląd GDY nagrywa i najedziesz myszką */
+QPushButton#RecordButton[recording_state="true"]:hover {
+    background-color: #8C0019;
+}

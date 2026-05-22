@@ -1,0 +1,9 @@
+PySide6
+sounddevice
+soundfile
+numpy
+librosa
+matplotlib
+pydub
+git+https://github.com/techmo-pl/asr-api-python.git#egg=techmo-asr-api
+git+https://github.com/techmo-pl/tts-api-python.git#egg=techmo-tts-api

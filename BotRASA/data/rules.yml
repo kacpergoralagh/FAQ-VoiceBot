@@ -1,0 +1,218 @@
+version: "3.1"
+rules:
+- rule: Powitanie
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Pożegnanie
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+- rule: Answer DSP definition
+  steps:
+    - intent: ask_dsp_definition
+    - action: utter_ask_dsp_definition
+
+- rule: Answer signal definition
+  steps:
+    - intent: ask_signal_definition
+    - action: utter_ask_signal_definition
+
+- rule: Answer continuous vs discrete
+  steps:
+    - intent: ask_continuous_vs_discrete
+    - action: utter_ask_continuous_vs_discrete
+
+- rule: Answer signal types
+  steps:
+    - intent: ask_signal_types
+    - action: utter_ask_signal_types
+
+- rule: Answer periodic signal
+  steps:
+    - intent: ask_periodic_signal
+    - action: utter_ask_periodic_signal
+
+- rule: Answer aperiodic signal
+  steps:
+    - intent: ask_aperiodic_signal
+    - action: utter_ask_aperiodic_signal
+
+- rule: Answer sampling theorem
+  steps:
+    - intent: ask_sampling_theorem
+    - action: utter_ask_sampling_theorem
+
+- rule: Answer aliasing
+  steps:
+    - intent: ask_aliasing
+    - action: utter_ask_aliasing
+
+- rule: Answer FFT definition
+  steps:
+    - intent: ask_fft_definition
+    - action: utter_ask_fft_definition
+
+- rule: Answer filter definition
+  steps:
+    - intent: ask_filter_definition
+    - action: utter_ask_filter_definition
+
+- rule: Answer FIR vs IIR
+  steps:
+    - intent: ask_fir_vs_iir
+    - action: utter_ask_fir_vs_iir
+
+- rule: fallback
+  steps:
+    - intent: nlu_fallback
+    - action: utter_fallback
+
+- rule: Answer energy signal
+  steps:
+    - intent: ask_energy_signal
+    - action: utter_ask_energy_signal
+
+- rule: Answer power signal
+  steps:
+    - intent: ask_power_signal
+    - action: utter_ask_power_signal
+
+- rule: Answer Dirac delta
+  steps:
+    - intent: ask_dirac_delta
+    - action: utter_ask_dirac_delta
+
+- rule: Answer ramp signal
+  steps:
+    - intent: ask_ramp_signal
+    - action: utter_ask_ramp_signal
+
+- rule: Answer sinusoidal signal
+  steps:
+    - intent: ask_sinusoidal_signal
+    - action: utter_ask_sinusoidal_signal
+
+- rule: Answer sampling definition
+  steps:
+    - intent: ask_sampling_definition
+    - action: utter_ask_sampling_definition
+
+- rule: Answer Nyquist frequency
+  steps:
+    - intent: ask_nyquist_frequency
+    - action: utter_ask_nyquist_frequency
+
+- rule: Answer undersampling
+  steps:
+    - intent: ask_undersampling
+    - action: utter_ask_undersampling
+
+- rule: Answer oversampling
+  steps:
+    - intent: ask_oversampling
+    - action: utter_ask_oversampling
+
+- rule: Answer Fourier definition
+  steps:
+    - intent: ask_fourier_definition
+    - action: utter_ask_fourier_definition
+
+- rule: Answer Fourier formula
+  steps:
+    - intent: ask_fourier_formula
+    - action: utter_ask_fourier_formula
+
+- rule: Answer Fourier calculation
+  steps:
+    - intent: ask_fourier_calculation
+    - action: utter_ask_fourier_calculation
+
+- rule: Answer FFT vs DFT
+  steps:
+    - intent: ask_fft_vs_dft
+    - action: utter_ask_fft_vs_dft
+
+- rule: Answer DFT definition
+  steps:
+    - intent: ask_dft_definition
+    - action: utter_ask_dft_definition
+
+- rule: Answer inverse Fourier
+  steps:
+    - intent: ask_inverse_fourier
+    - action: utter_ask_inverse_fourier
+
+- rule: Answer frequency domain
+  steps:
+    - intent: ask_frequency_domain
+    - action: utter_ask_frequency_domain
+
+- rule: Answer time-frequency relation
+  steps:
+    - intent: ask_time_frequency_relation
+    - action: utter_ask_time_frequency_relation
+
+- rule: Answer lowpass filter
+  steps:
+    - intent: ask_lowpass_filter
+    - action: utter_ask_lowpass_filter
+
+- rule: Answer highpass filter
+  steps:
+    - intent: ask_highpass_filter
+    - action: utter_ask_highpass_filter
+
+- rule: Answer bandpass filter
+  steps:
+    - intent: ask_bandpass_filter
+    - action: utter_ask_bandpass_filter
+
+- rule: Answer bandstop filter
+  steps:
+    - intent: ask_bandstop_filter
+    - action: utter_ask_bandstop_filter
+
+- rule: Answer ideal filter
+  steps:
+    - intent: ask_ideal_filter
+    - action: utter_ask_ideal_filter
+
+- rule: Answer FIR filter
+  steps:
+    - intent: ask_fir_filter
+    - action: utter_ask_fir_filter
+
+- rule: Answer IIR filter
+  steps:
+    - intent: ask_iir_filter
+    - action: utter_ask_iir_filter
+
+- rule: Answer filter order
+  steps:
+    - intent: ask_filter_order
+    - action: utter_ask_filter_order
+
+- rule: Answer filter design methods
+  steps:
+    - intent: ask_filter_design_methods
+    - action: utter_ask_filter_design_methods
+
+- rule: Answer windowing definition
+  steps:
+    - intent: ask_windowing_definition
+    - action: utter_ask_windowing_definition
+
+- rule: Answer Hamming window
+  steps:
+    - intent: ask_hamming_window
+    - action: utter_ask_hamming_window
+
+- rule: Answer Hann window
+  steps:
+    - intent: ask_hann_window
+    - action: utter_ask_hann_window

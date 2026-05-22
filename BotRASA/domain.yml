@@ -1,0 +1,187 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+
+  - ask_dsp_definition
+  - ask_signal_definition
+  - ask_continuous_vs_discrete
+  - ask_signal_types
+  - ask_periodic_signal
+  - ask_aperiodic_signal
+  - ask_energy_signal
+  - ask_power_signal
+  - ask_dirac_delta
+  - ask_ramp_signal
+  - ask_sinusoidal_signal
+
+  - ask_sampling_definition
+  - ask_sampling_theorem
+  - ask_nyquist_frequency
+  - ask_aliasing
+  - ask_undersampling
+  - ask_oversampling
+
+  - ask_fourier_definition
+  - ask_fourier_formula
+  - ask_fourier_calculation
+  - ask_fft_definition
+  - ask_fft_vs_dft
+  - ask_dft_definition
+  - ask_inverse_fourier
+  - ask_frequency_domain
+  - ask_time_frequency_relation
+
+  - ask_filter_definition
+  - ask_lowpass_filter
+  - ask_highpass_filter
+  - ask_bandpass_filter
+  - ask_bandstop_filter
+  - ask_ideal_filter
+  - ask_fir_filter
+  - ask_iir_filter
+  - ask_fir_vs_iir
+  - ask_filter_order
+  - ask_filter_design_methods
+
+  - ask_windowing_definition
+  - ask_hamming_window
+  - ask_hann_window
+
+
+responses:
+
+  utter_greet:
+    - text: "Cześć! 👋 Chcesz dowiedzieć się czegoś o DSP?"
+
+  utter_goodbye:
+    - text: "Do zobaczenia! Powodzenia z DSP 😄"
+
+
+  utter_ask_dsp_definition:
+    - text: "DSP (Digital Signal Processing) to dziedzina zajmująca się analizą, przetwarzaniem i modyfikacją sygnałów w postaci cyfrowej."
+
+  utter_ask_signal_definition:
+    - text: "Sygnał to funkcja opisująca zmienność pewnej wielkości fizycznej w czasie, przestrzeni lub innej dziedzinie."
+
+  utter_ask_continuous_vs_discrete:
+    - text: "Sygnał ciągły jest określony w każdym momencie czasu, a sygnał dyskretny tylko w wybranych chwilach (próbkach)."
+
+  utter_ask_signal_types:
+    - text: "Sygnały można klasyfikować m.in. jako ciągłe i dyskretne, okresowe i nieokresowe, energetyczne i mocy."
+
+  utter_ask_periodic_signal:
+    - text: "Sygnał okresowy to taki, który powtarza się co stały okres czasu T, np. sinusoida."
+
+  utter_ask_aperiodic_signal:
+    - text: "Sygnał nieokresowy (aperiodyczny) nie powtarza się regularnie w czasie."
+
+  utter_ask_energy_signal:
+    - text: "Sygnał energetyczny to sygnał o skończonej energii całkowitej w czasie."
+
+  utter_ask_power_signal:
+    - text: "Sygnał mocy ma nieskończoną energię, ale skończoną średnią moc, np. sygnał okresowy."
+
+  utter_ask_dirac_delta:
+    - text: "Delta Diraca to idealny impuls o zerowej szerokości i jednostkowym polu, używany do analizy systemów."
+
+  utter_ask_ramp_signal:
+    - text: "Sygnał rampowy to sygnał rosnący liniowo w czasie."
+
+  utter_ask_sinusoidal_signal:
+    - text: "Sygnał sinusoidalny opisuje funkcja sinus i jest podstawowym sygnałem w analizie DSP."
+
+
+  utter_ask_sampling_definition:
+    - text: "Próbkowanie to proces zamiany sygnału ciągłego na dyskretny poprzez pobieranie próbek w równych odstępach czasu."
+
+  utter_ask_sampling_theorem:
+    - text: "Twierdzenie Nyquista-Shannona mówi, że częstotliwość próbkowania musi być co najmniej dwukrotnie większa od najwyższej częstotliwości sygnału."
+
+  utter_ask_nyquist_frequency:
+    - text: "Częstotliwość Nyquista to połowa częstotliwości próbkowania."
+
+  utter_ask_aliasing:
+    - text: "Aliasing to zjawisko nakładania się widm częstotliwościowych przy zbyt niskim próbkowaniu."
+
+  utter_ask_undersampling:
+    - text: "Undersampling to próbkowanie z częstotliwością mniejszą niż wymagana przez twierdzenie Nyquista."
+
+  utter_ask_oversampling:
+    - text: "Oversampling to próbkowanie z częstotliwością znacznie wyższą niż minimalna wymagana."
+
+
+  utter_ask_fourier_definition:
+    - text: "Transformata Fouriera pozwala przedstawić sygnał w dziedzinie częstotliwości."
+
+  utter_ask_fourier_formula:
+    - text: "Transformata Fouriera jest opisana całką, która przekształca sygnał z dziedziny czasu do częstotliwości."
+
+  utter_ask_fourier_calculation:
+    - text: "Transformatę Fouriera oblicza się analitycznie lub numerycznie, np. za pomocą DFT lub FFT."
+
+  utter_ask_fft_definition:
+    - text: "FFT to szybki algorytm obliczania dyskretnej transformaty Fouriera."
+
+  utter_ask_fft_vs_dft:
+    - text: "DFT to definicja matematyczna, a FFT to wydajny algorytm jej obliczania."
+
+  utter_ask_dft_definition:
+    - text: "DFT to dyskretna transformata Fouriera stosowana do sygnałów dyskretnych."
+
+  utter_ask_inverse_fourier:
+    - text: "Odwrotna transformata Fouriera pozwala odzyskać sygnał w dziedzinie czasu."
+
+  utter_ask_frequency_domain:
+    - text: "Dziedzina częstotliwości pokazuje, jakie częstotliwości składają się na sygnał."
+
+  utter_ask_time_frequency_relation:
+    - text: "Dziedzina czasu opisuje przebieg sygnału, a częstotliwości – jego składowe widmowe."
+
+
+  utter_ask_filter_definition:
+    - text: "Filtr to układ, który zmienia widmo sygnału, np. tłumiąc wybrane częstotliwości."
+
+  utter_ask_lowpass_filter:
+    - text: "Filtr dolnoprzepustowy przepuszcza niskie częstotliwości, a tłumi wysokie."
+
+  utter_ask_highpass_filter:
+    - text: "Filtr górnoprzepustowy przepuszcza wysokie częstotliwości, a tłumi niskie."
+
+  utter_ask_bandpass_filter:
+    - text: "Filtr pasmowoprzepustowy przepuszcza tylko określone pasmo częstotliwości."
+
+  utter_ask_bandstop_filter:
+    - text: "Filtr pasmowozaporowy tłumi określone pasmo częstotliwości."
+
+  utter_ask_ideal_filter:
+    - text: "Filtr idealny ma idealnie prostą charakterystykę, ale nie jest możliwy do realizacji fizycznej."
+
+  utter_ask_fir_filter:
+    - text: "Filtr FIR ma skończoną odpowiedź impulsową i jest zawsze stabilny."
+
+  utter_ask_iir_filter:
+    - text: "Filtr IIR ma nieskończoną odpowiedź impulsową i może być bardziej efektywny obliczeniowo."
+
+  utter_ask_fir_vs_iir:
+    - text: "FIR jest stabilny i ma liniową fazę, a IIR jest bardziej złożony, ale wymaga mniej współczynników."
+
+  utter_ask_filter_order:
+    - text: "Rząd filtra określa jego złożoność i wpływa na stromość charakterystyki."
+
+  utter_ask_filter_design_methods:
+    - text: "Filtry projektuje się m.in. metodą okien, aproksymacji lub transformacji analogowo-cyfrowej."
+
+
+  utter_ask_windowing_definition:
+    - text: "Okno w DSP to funkcja używana do ograniczenia sygnału w czasie."
+
+  utter_ask_hamming_window:
+    - text: "Okno Hamminga zmniejsza listki boczne widma kosztem szerszego listka głównego."
+
+  utter_ask_hann_window:
+    - text: "Okno Hanna jest podobne do Hamminga, ale ma nieco inne właściwości widmowe."
+
+  utter_fallback:
+    - text: "Nie jestem pewien 🤔 Możesz przeformułować pytanie z DSP?"

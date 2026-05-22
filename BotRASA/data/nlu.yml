@@ -1,0 +1,265 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - cześć
+    - hej
+    - witaj
+- intent: goodbye
+  examples: |
+    - pa
+    - do widzenia
+
+
+- intent: ask_dsp_definition
+  examples: |
+    - co to jest dsp
+    - czym jest przetwarzanie sygnałów cyfrowych
+    - definicja dsp
+    - wyjaśnij dsp
+    - co oznacza skrót dsp
+    - do czego służy dsp
+
+- intent: ask_signal_definition
+  examples: |
+    - co to jest sygnał
+    - definicja sygnału
+    - czym jest sygnał w dsp
+    - jak zdefiniować sygnał
+    - co nazywamy sygnałem
+
+- intent: ask_continuous_vs_discrete
+  examples: |
+    - różnica między sygnałem ciągłym a dyskretnym
+    - sygnał ciągły vs dyskretny
+    - czym różni się sygnał dyskretny od ciągłego
+    - porównaj sygnały ciągłe i dyskretne
+
+- intent: ask_signal_types
+  examples: |
+    - jakie są rodzaje sygnałów
+    - typy sygnałów w dsp
+    - podział sygnałów
+    - klasyfikacja sygnałów
+
+- intent: ask_periodic_signal
+  examples: |
+    - co to jest sygnał okresowy
+    - definicja sygnału okresowego
+    - kiedy sygnał jest okresowy
+    - przykład sygnału okresowego
+
+- intent: ask_aperiodic_signal
+  examples: |
+    - co to jest sygnał nieokresowy
+    - definicja sygnału aperiodycznego
+    - sygnał nieokresowy przykład
+
+- intent: ask_energy_signal
+  examples: |
+    - co to jest sygnał energetyczny
+    - definicja sygnału energetycznego
+    - kiedy sygnał jest energetyczny
+
+- intent: ask_power_signal
+  examples: |
+    - co to jest sygnał mocy
+    - definicja sygnału mocy
+    - sygnał mocy a energetyczny
+
+- intent: ask_dirac_delta
+  examples: |
+    - co to jest delta diraca
+    - impuls diraca
+    - funkcja delta diraca
+    - do czego służy delta diraca
+
+- intent: ask_ramp_signal
+  examples: |
+    - co to jest sygnał rampowy
+    - definicja rampy
+    - sygnał rampowy przykład
+
+- intent: ask_sinusoidal_signal
+  examples: |
+    - co to jest sygnał sinusoidalny
+    - sygnał sinus przykład
+    - opis sygnału sinusoidalnego
+
+- intent: ask_sampling_definition
+  examples: |
+    - co to jest próbkowanie
+    - definicja próbkowania
+    - na czym polega próbkowanie sygnału
+
+- intent: ask_sampling_theorem
+  examples: |
+    - twierdzenie o próbkowaniu
+    - twierdzenie nyquista shannona
+    - na czym polega twierdzenie próbkowania
+
+- intent: ask_nyquist_frequency
+  examples: |
+    - co to jest częstotliwość nyquista
+    - definicja częstotliwości nyquista
+    - jak obliczyć częstotliwość nyquista
+
+- intent: ask_aliasing
+  examples: |
+    - co to jest aliasing
+    - zjawisko aliasingu
+    - kiedy występuje aliasing
+
+- intent: ask_undersampling
+  examples: |
+    - co to jest undersampling
+    - zbyt niskie próbkowanie
+    - skutki undersamplingu
+
+- intent: ask_oversampling
+  examples: |
+    - co to jest oversampling
+    - nadpróbkowanie sygnału
+    - po co stosuje się oversampling
+
+- intent: ask_fourier_definition
+  examples: |
+    - co to jest transformata fouriera
+    - definicja transformaty fouriera
+    - do czego służy fourier
+
+- intent: ask_fourier_formula
+  examples: |
+    - wzór na transformate fouriera
+    - podaj wzór fouriera
+    - matematyczna postać fouriera
+
+- intent: ask_fourier_calculation
+  examples: |
+    - jak policzyć transformate fouriera
+    - obliczanie fouriera
+    - jak liczy się fouriera
+
+- intent: ask_fft_definition
+  examples: |
+    - co to jest fft
+    - szybka transformata fouriera
+    - definicja fft
+
+- intent: ask_fft_vs_dft
+  examples: |
+    - różnica fft i dft
+    - fft vs dft
+    - czym się różni fft od dft
+
+- intent: ask_dft_definition
+  examples: |
+    - co to jest dft
+    - dyskretna transformata fouriera
+    - definicja dft
+
+- intent: ask_inverse_fourier
+  examples: |
+    - transformata odwrotna fouriera
+    - jak działa odwrotna fouriera
+    - po co odwrotna transformata
+
+- intent: ask_frequency_domain
+  examples: |
+    - co to jest dziedzina częstotliwości
+    - sygnał w dziedzinie częstotliwości
+    - analiza częstotliwościowa
+
+- intent: ask_time_frequency_relation
+  examples: |
+    - zależność czasu i częstotliwości
+    - dziedzina czasu a częstotliwości
+    - relacja czas częstotliwość
+
+- intent: ask_filter_definition
+  examples: |
+    - co to jest filtr
+    - definicja filtra dsp
+    - do czego służy filtr
+
+- intent: ask_lowpass_filter
+  examples: |
+    - filtr dolnoprzepustowy
+    - co to jest low pass
+    - działanie filtra dolnoprzepustowego
+
+- intent: ask_highpass_filter
+  examples: |
+    - filtr górnoprzepustowy
+    - co to jest high pass
+    - działanie filtra górnoprzepustowego
+
+- intent: ask_bandpass_filter
+  examples: |
+    - filtr pasmowoprzepustowy
+    - band pass filter
+    - co przepuszcza filtr pasmowy
+
+- intent: ask_bandstop_filter
+  examples: |
+    - filtr pasmowozaporowy
+    - band stop filter
+    - filtr wycinający pasmo
+
+- intent: ask_ideal_filter
+  examples: |
+    - filtr idealny
+    - charakterystyka filtra idealnego
+    - czy filtr idealny istnieje
+
+- intent: ask_fir_filter
+  examples: |
+    - co to jest filtr fir
+    - filtr o skończonej odpowiedzi impulsowej
+    - charakterystyka filtra fir
+
+- intent: ask_iir_filter
+  examples: |
+    - co to jest filtr iir
+    - filtr o nieskończonej odpowiedzi impulsowej
+    - charakterystyka filtra iir
+
+- intent: ask_fir_vs_iir
+  examples: |
+    - fir vs iir
+    - różnica między fir a iir
+    - który filtr lepszy fir czy iir
+
+- intent: ask_filter_order
+  examples: |
+    - co to jest rząd filtra
+    - jak rząd filtra wpływa na charakterystykę
+    - definicja rzędu filtra
+
+- intent: ask_filter_design_methods
+  examples: |
+    - metody projektowania filtrów
+    - jak projektuje się filtry cyfrowe
+    - metody syntezy filtrów
+
+- intent: ask_windowing_definition
+  examples: |
+    - co to jest okno w dsp
+    - po co stosuje się okna
+    - definicja windowing
+
+- intent: ask_hamming_window
+  examples: |
+    - okno hamminga
+    - charakterystyka okna hamminga
+    - kiedy stosować okno hamminga
+
+- intent: ask_hann_window
+  examples: |
+    - okno hanna
+    - charakterystyka okna hanna
+    - różnica okno hanna i hamminga
+
+
+
+

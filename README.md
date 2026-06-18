@@ -118,4 +118,4 @@ The application utilizes the following libraries:
 
 ## Acknowledgments & Project History
 
-This repository is a refactored and refined standalone version of a module originally developed for a university course project at AGH University. The original collaborative project was created together with Igor Kowalski and Damian Pająk and can be found here: **[TM_projekt_2](https://github.com/kacpergoralagh/TM_projekt_2)**.
+This repository is a refactored and refined standalone version of a module originally developed for a university course project at AGH University. The original collaborative project was created together with Igor Kowalski and Damian Pająk and can be found here: **[TM_projekt_2](https://github.com/skynni/TM_projekt_2)**.
